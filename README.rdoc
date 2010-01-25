@@ -1,0 +1,44 @@
+= Redmine Language Change
+
+This plugin allows overriding the default language strings in Redmine, without hacking the Redmine core.
+
+== Getting the plugin
+
+A copy of the plugin can be downloaded from {Little Stream Software}[https://projects.littlestreamsoftware.com/projects/redmine-misc/files] or from {GitHub}[http://github.com/edavis10/redmine_language_change]
+
+
+== Installation and Setup
+
+1. Follow the Redmine plugin installation steps at: http://www.redmine.org/wiki/redmine/Plugins 
+2. Change your language translations (see below)
+3. Restart your Redmine web servers (e.g. mongrel, thin, mod_rails)
+
+== Changing the language translations
+
+To setup custom translations:
+
+1. Open the .yml file in Redmine's config/locales/ for the language you want to change (e.g. config/locales/en.yml for English)
+2. Search for the strings you want to change
+3. Once you find the strings, copy the language "key" (the key is before the colon like "field_author:")
+4. Enter the key into the plugin's translations file in config/locales, using the same file name as the language.
+5. Change the content for the plugin's key.
+
+Example:
+
+If you wanted to change the "Author" string to "Owner", you would:
+
+1. Find "field_author: Author" in Redmine's config/locales/en.yml
+2. Copy "field_author: Author" to this plugin's config/locales/en.yml
+3. Edit the plugin's config/locales/en.yml to look like:
+
+en:
+  field_author: Owner
+
+== License
+
+This plugin is licensed under the GNU GPL v2.  See COPYRIGHT.txt and GPL.txt for details.
+
+== Project help
+
+If you need help you can contact the maintainer at the Bug Tracker.  The bug tracker is located at  https://projects.littlestreamsoftware.com
+
