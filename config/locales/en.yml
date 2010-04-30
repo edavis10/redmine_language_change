@@ -1,4 +1,87 @@
-# Enter your language changes here
+# Changes Issue to Task
 en:
-  a_new_field: "New fields can be added also"
-
+  notice_failed_to_save_issues: "Failed to save {{count}} task(s) on {{total}} selected: {{ids}}."
+  notice_no_issue_selected: "No task is selected! Please, check the tasks you want to edit."
+  notice_issue_done_ratios_updated: Task done ratios updated.
+  error_issue_not_found_in_project: 'The task was not found or does not belong to this project'
+  error_no_default_issue_status: 'No default task status is defined. Please check your configuration (Go to "Administration -> Task statuses").'
+  error_can_not_delete_tracker: "This tracker contains tasks and can't be deleted."
+  error_can_not_reopen_issue_on_closed_version: 'An task assigned to a closed version can not be reopened'
+  error_issue_done_ratios_not_updated: "Task done ratios not updated."
+  error_unable_delete_issue_status: 'Unable to delete task status'
+  mail_subject_reminder: "{{count}} task(s) due in the next days"
+  mail_body_reminder: "{{count}} task(s) that are assigned to you are due in the next {{days}} days:"
+  field_issue: Task
+  field_is_closed: Task closed
+  field_is_in_roadmap: Tasks displayed in roadmap
+  field_issue_to: Related task
+  field_assignable: Tasks can be assigned to this role
+  field_parent_issue: Parent task
+  setting_issues_export_limit: Tasks export limit
+  setting_cross_project_issue_relations: Allow cross-project task relations
+  setting_issue_list_default_columns: Default columns displayed on the task list
+  setting_display_subprojects_issues: Display subprojects tasks on main projects by default
+  setting_issue_done_ratio: Calculate the task done ratio with
+  setting_issue_done_ratio_issue_field: Use the task field
+  setting_issue_done_ratio_issue_status: Use the task status
+  permission_manage_categories: Manage task categories
+  permission_view_issues: View Tasks
+  permission_add_issues: Add tasks
+  permission_edit_issues: Edit tasks
+  permission_manage_issue_relations: Manage task relations
+  permission_add_issue_notes: Add notes
+  permission_edit_issue_notes: Edit notes
+  permission_edit_own_issue_notes: Edit own notes
+  permission_move_issues: Move tasks
+  permission_delete_issues: Delete tasks
+  permission_view_issue_watchers: View watchers list
+  permission_add_issue_watchers: Add watchers
+  permission_delete_issue_watchers: Delete watchers
+  project_module_issue_tracking: Task tracking
+  label_issue: Task
+  label_issue_new: New task
+  label_issue_plural: Tasks
+  label_issue_view_all: View all tasks
+  label_issues_by: "Tasks by {{value}}"
+  label_issue_added: Task added
+  label_issue_updated: Task updated
+  label_issue_status: Task status
+  label_issue_status_plural: Task statuses
+  label_issue_status_new: New status
+  label_issue_category: Task category
+  label_issue_category_plural: Task categories
+  label_issue_category_new: New category
+  label_reported_issues: Reported tasks
+  label_assigned_to_me_issues: Tasks assigned to me
+  label_open_issues: open
+  label_open_issues_plural: open
+  label_closed_issues: closed
+  label_closed_issues_plural: closed
+  label_x_open_issues_abbr_on_total:
+  label_x_open_issues_abbr:
+  label_x_closed_issues_abbr:
+  label_roadmap_no_issues: No tasks for this version
+  label_issue_tracking: Task tracking
+  label_watched_issues: Watched tasks
+  label_related_issues: Related tasks
+  label_bulk_edit_selected_issues: Bulk edit selected tasks
+  label_issue_watchers: Watchers
+  label_update_issue_done_ratios: Update task done ratios
+  text_issues_ref_in_commit_messages: Referencing and fixing tasks in commit messages
+  text_issue_added: "Task {{id}} has been reported by {{author}}."
+  text_issue_updated: "Task {{id}} has been updated by {{author}}."
+  text_issue_category_destroy_question: "Some tasks ({{count}}) are assigned to this category. What do you want to do ?"
+  text_issue_category_destroy_assignments: Remove category assignments
+  text_issue_category_reassign_to: Reassign tasks to this category
+  text_user_mail_option: "For unselected projects, you will only receive notifications about things you watch or you're involved in (eg. tasks you're the author or assignee)."
+  text_no_configuration_data: "Roles, trackers, task statuses and workflow have not been configured yet.\nIt is highly recommended to load the default configuration. You will be able to modify it once loaded."
+  text_issues_destroy_confirmation: 'Are you sure you want to delete the selected task(s) ?'
+  text_destroy_time_entries_question: "{{hours}} hours were reported on the tasks you are about to delete. What do you want to do ?"
+  text_reassign_time_entries: 'Reassign reported hours to this task:'
+  default_issue_status_new: New
+  default_issue_status_in_progress: In Progress
+  default_issue_status_resolved: Resolved
+  default_issue_status_feedback: Feedback
+  default_issue_status_closed: Closed
+  default_issue_status_rejected: Rejected
+  enumeration_issue_priorities: Task priorities
